@@ -1,9 +1,12 @@
 import React from "react";
+import * as Styled from "./styles";
 
 function Home() {
   return (
     <div className="Home">
-      <h1> Hello World </h1>
+      <Styled.Container bcolor="black" color="white">
+        <h1> Hello World </h1>
+      </Styled.Container>
     </div>
   );
 }
