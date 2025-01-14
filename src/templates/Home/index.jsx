@@ -1,11 +1,12 @@
 import React from "react";
 import * as Styled from "./styles";
+import { Heading } from "../../components/Heading";
 
 function Home() {
   return (
     <div className="Home">
       <Styled.Container>
-        <h1> Hello World </h1>
+        <Heading> Hello World </Heading>
       </Styled.Container>
     </div>
   );
