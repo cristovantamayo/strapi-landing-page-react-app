@@ -6,7 +6,10 @@ export const theme = {
     thirdGray: "#663",
   },
   font: {
-    family: "Arial, sans-serif",
+    family: {
+      default: "'Open Sans', serif;",
+      secondary: "'Montserrat', serif;",
+    },
     color: "white",
   },
   colors: {
@@ -15,6 +18,6 @@ export const theme = {
     middleGray: "#333",
     thirdGray: "#663",
     light: "#F5F5F5",
-    dark: "#333",
+    dark: "#333333",
   },
 };
