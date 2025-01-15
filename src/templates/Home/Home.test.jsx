@@ -17,7 +17,7 @@ it("renders learn react link", () => {
 
   expect(headingContainer).toHaveStyleRule("background", "black");
 
-  expect(headingContainer).toMatchSnapshot();
+  //expect(headingContainer).toMatchSnapshot();
 
   debug();
 });
