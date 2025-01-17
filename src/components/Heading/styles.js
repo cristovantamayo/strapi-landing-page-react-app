@@ -1,7 +1,9 @@
 import styled, { css } from "styled-components";
+import { theme } from "../../styles/theme";
 
 export const Title = styled.h1`
-  ${({ theme, light }) => css`
-    color: ${light ? theme.font.color : theme.colors.dark};
+  ${({ theme, colorDark }) => css`
+    font-family: "Montserrat", serif;
+    color: ${colorDark ? theme.colors.primaryColor : theme.colors.white};
   `}
 `;

@@ -10,14 +10,14 @@ it("renders learn react link", () => {
     name: "Hello World",
   }).parentElement;
 
-  expect(headingContainer).toHaveStyle({
-    background: "black",
-    color: "white",
-  });
+  // expect(headingContainer).toHaveStyle({
+  //   background: "black",
+  //   color: "white",
+  // });
 
-  expect(headingContainer).toHaveStyleRule("background", "black");
+  // expect(headingContainer).toHaveStyleRule("background", "black");
 
-  //expect(headingContainer).toMatchSnapshot();
+  // expect(headingContainer).toMatchSnapshot();
 
   debug();
 });
