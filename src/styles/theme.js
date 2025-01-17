@@ -1,23 +1,23 @@
 export const theme = {
-  color: {
-    primary: "red",
-    secondary: "black",
-    middleGray: "#333",
-    thirdGray: "#663",
+  colors: {
+    primaryColor: "#0A1128",
+    secondaryColor: "#dc143c",
+    white: "#FFFFFF",
   },
   font: {
     family: {
-      default: "'Open Sans', serif;",
-      secondary: "'Montserrat', serif;",
+      default: '"Open Sans", serif;',
+      secondary: '"Montserrat", serif;',
     },
-    color: "white",
-  },
-  colors: {
-    primary: "red",
-    secondary: "black",
-    middleGray: "#333",
-    thirdGray: "#663",
-    light: "#F5F5F5",
-    dark: "#333333",
+    sizes: {
+      xSmall: "0.8rem",
+      small: "1.6rem",
+      medium: "2.4rem",
+      large: "3.2rem",
+      xLarge: "4.0rem",
+      xXLarge: "4.8rem",
+      huge: "5.6rem",
+      xHuge: "6.4rem",
+    },
   },
 };
