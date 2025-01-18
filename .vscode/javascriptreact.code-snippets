@@ -24,7 +24,7 @@
       "export const $1 = ({ children }) => {",
       "\treturn (",
       "\t\t<Styled.Container>",
-      "\t\t\t<h1>$1</h1>",
+      "\t\t\t<h1>{children}</h1>",
       "\t\t</Styled.Container>",
       "\t);",
       "};",
@@ -32,9 +32,9 @@
       "$1.propTypes = {",
       "\tchildren: P.node.isRequired,",
       "};",
-      ""
+      "",
     ],
-    "description": "React Components Boilerplate"
+    "description": "React Components Boilerplate",
   },
 
   "Storybook": {
@@ -62,9 +62,9 @@
       "\t\t</div>",
       "\t);",
       "};",
-      ""
+      "",
     ],
-    "description": "React Storybook Boilerplate"
+    "description": "React Storybook Boilerplate",
   },
 
   "React Test": {
@@ -81,8 +81,8 @@
       "\t\texpect(screen.getByRole(\"heading\")).toBeInTheDocument();",
       "\t});",
       "});",
-      ""
+      "",
     ],
-    "description": "React Test Boilerplate"
-  }
+    "description": "React Test Boilerplate",
+  },
 }
