@@ -1,0 +1,88 @@
+{
+  // Place your snippets for javascriptreact here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+
+  // Original file location: ~/.config/Code/User/snippets/javascriptreact.json
+
+  "React Component": {
+    "prefix": "component",
+    "body": [
+      "import P from \"prop-types\";",
+      "import * as Styled from \"./styles\";",
+      "",
+      "export const $1 = ({ children }) => {",
+      "\treturn (",
+      "\t\t<Styled.Container>",
+      "\t\t\t<h1>$1</h1>",
+      "\t\t</Styled.Container>",
+      "\t);",
+      "};",
+      "",
+      "$1.propTypes = {",
+      "\tchildren: P.node.isRequired,",
+      "};",
+      ""
+    ],
+    "description": "React Components Boilerplate"
+  },
+
+  "Storybook": {
+    "prefix": "story",
+    "body": [
+      "import { $1 } from \".\";",
+      "",
+      "export default {",
+      "\ttitle: \"$1\",",
+      "\tcomponent: $1,",
+      "\targs: {",
+      "\t\tchildren: \"$1\",",
+      "\t},",
+      "\targTypes: {",
+      "\t\tchildren: {",
+      "\t\t\ttype: \"string\",",
+      "\t\t},",
+      "\t},",
+      "};",
+      "",
+      "export const Template = (args) => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t<$1 {...args} />",
+      "\t\t</div>",
+      "\t);",
+      "};",
+      ""
+    ],
+    "description": "React Storybook Boilerplate"
+  },
+
+  "React Test": {
+    "prefix": "test react",
+    "body": [
+      "import { screen } from \"@testing-library/react\";",
+      "import { describe, expect } from \"@jest/globals\";",
+      "import { renderTheme } from \"../../styles/render-theme\";",
+      "import { $1 } from \".\";",
+      "",
+      "describe(\"<$1 />\", () => {",
+      "\tit(\"should render the component\", () => {",
+      "\t\trenderTheme(<$1>Children</$1>);",
+      "\t\texpect(screen.getByRole(\"heading\")).toBeInTheDocument();",
+      "\t});",
+      "});",
+      ""
+    ],
+    "description": "React Test Boilerplate"
+  }
+}
