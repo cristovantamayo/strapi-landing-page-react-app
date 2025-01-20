@@ -4,8 +4,13 @@ import { renderTheme } from "../../styles/render-theme";
 import { TextComponent } from ".";
 
 describe("<TextComponent />", () => {
-  it("should render the component", () => {
+  it("should render a text", () => {
     renderTheme(<TextComponent>Children</TextComponent>);
-    expect(screen.getByRole("heading")).toBeInTheDocument();
+    expect(screen.getByText("Children")).toBeInTheDocument();
+  });
+
+  it("should match the snapshot", () => {
+    const { container } = renderTheme(<TextComponent>Children</TextComponent>);
+    expect(container).toMatchSnapshot();
   });
 });
