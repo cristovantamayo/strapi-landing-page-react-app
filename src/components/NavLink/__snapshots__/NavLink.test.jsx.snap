@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NavLink /> should match snapshot 1`] = `
-Array [
-  .c0 {
+.c0 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.c1 {
   display: block;
   text-decoration: none;
   text-align: center;
@@ -12,7 +16,7 @@ Array [
   position: relative;
 }
 
-.c0::after {
+.c1::after {
   content: "";
   position: absolute;
   bottom: 0.76rem;
@@ -23,354 +27,90 @@ Array [
   transition: all 200ms ease-in-out;
 }
 
-.c0:hover::after {
+.c1:hover::after {
   left: 22%;
   width: 50%;
 }
 
 @media (max-width: 768px) {
-
+  .c0 {
+    flex-flow: column wrap;
+    align-content: center;
+  }
 }
 
-<a
-    class="c0"
+<nav
+  class="c0"
+>
+  <a
+    class="c1"
     href="#target1"
     target="_self"
   >
     Link 1
-  </a>,
-  .c0 {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 1.6rem;
-  color: #0A1128;
-  position: relative;
-}
-
-.c0::after {
-  content: "";
-  position: absolute;
-  bottom: 0.76rem;
-  left: 50%;
-  width: 0;
-  height: 0.2rem;
-  background: #dc143c;
-  transition: all 200ms ease-in-out;
-}
-
-.c0:hover::after {
-  left: 22%;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-
-}
-
-<a
-    class="c0"
+  </a>
+  <a
+    class="c1"
     href="#target2"
     target="_self"
   >
     Link 2
-  </a>,
-  .c0 {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 1.6rem;
-  color: #0A1128;
-  position: relative;
-}
-
-.c0::after {
-  content: "";
-  position: absolute;
-  bottom: 0.76rem;
-  left: 50%;
-  width: 0;
-  height: 0.2rem;
-  background: #dc143c;
-  transition: all 200ms ease-in-out;
-}
-
-.c0:hover::after {
-  left: 22%;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-
-}
-
-<a
-    class="c0"
+  </a>
+  <a
+    class="c1"
     href="#target3"
     target="_self"
   >
     Link 3
-  </a>,
-  .c0 {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 1.6rem;
-  color: #0A1128;
-  position: relative;
-}
-
-.c0::after {
-  content: "";
-  position: absolute;
-  bottom: 0.76rem;
-  left: 50%;
-  width: 0;
-  height: 0.2rem;
-  background: #dc143c;
-  transition: all 200ms ease-in-out;
-}
-
-.c0:hover::after {
-  left: 22%;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-
-}
-
-<a
-    class="c0"
+  </a>
+  <a
+    class="c1"
     href="#target4"
     target="_self"
   >
     Link 4
-  </a>,
-  .c0 {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 1.6rem;
-  color: #0A1128;
-  position: relative;
-}
-
-.c0::after {
-  content: "";
-  position: absolute;
-  bottom: 0.76rem;
-  left: 50%;
-  width: 0;
-  height: 0.2rem;
-  background: #dc143c;
-  transition: all 200ms ease-in-out;
-}
-
-.c0:hover::after {
-  left: 22%;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-
-}
-
-<a
-    class="c0"
+  </a>
+  <a
+    class="c1"
     href="#target5"
     target="_self"
   >
     Link 5
-  </a>,
-  .c0 {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 1.6rem;
-  color: #0A1128;
-  position: relative;
-}
-
-.c0::after {
-  content: "";
-  position: absolute;
-  bottom: 0.76rem;
-  left: 50%;
-  width: 0;
-  height: 0.2rem;
-  background: #dc143c;
-  transition: all 200ms ease-in-out;
-}
-
-.c0:hover::after {
-  left: 22%;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-
-}
-
-<a
-    class="c0"
+  </a>
+  <a
+    class="c1"
     href="#target6"
     target="_self"
   >
     Link 6
-  </a>,
-  .c0 {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 1.6rem;
-  color: #0A1128;
-  position: relative;
-}
-
-.c0::after {
-  content: "";
-  position: absolute;
-  bottom: 0.76rem;
-  left: 50%;
-  width: 0;
-  height: 0.2rem;
-  background: #dc143c;
-  transition: all 200ms ease-in-out;
-}
-
-.c0:hover::after {
-  left: 22%;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-
-}
-
-<a
-    class="c0"
+  </a>
+  <a
+    class="c1"
     href="#target7"
     target="_self"
   >
     Link 7
-  </a>,
-  .c0 {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 1.6rem;
-  color: #0A1128;
-  position: relative;
-}
-
-.c0::after {
-  content: "";
-  position: absolute;
-  bottom: 0.76rem;
-  left: 50%;
-  width: 0;
-  height: 0.2rem;
-  background: #dc143c;
-  transition: all 200ms ease-in-out;
-}
-
-.c0:hover::after {
-  left: 22%;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-
-}
-
-<a
-    class="c0"
+  </a>
+  <a
+    class="c1"
     href="#target8"
     target="_self"
   >
     Link 8
-  </a>,
-  .c0 {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 1.6rem;
-  color: #0A1128;
-  position: relative;
-}
-
-.c0::after {
-  content: "";
-  position: absolute;
-  bottom: 0.76rem;
-  left: 50%;
-  width: 0;
-  height: 0.2rem;
-  background: #dc143c;
-  transition: all 200ms ease-in-out;
-}
-
-.c0:hover::after {
-  left: 22%;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-
-}
-
-<a
-    class="c0"
+  </a>
+  <a
+    class="c1"
     href="#target9"
     target="_self"
   >
     Link 9
-  </a>,
-  .c0 {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 1.6rem;
-  color: #0A1128;
-  position: relative;
-}
-
-.c0::after {
-  content: "";
-  position: absolute;
-  bottom: 0.76rem;
-  left: 50%;
-  width: 0;
-  height: 0.2rem;
-  background: #dc143c;
-  transition: all 200ms ease-in-out;
-}
-
-.c0:hover::after {
-  left: 22%;
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-
-}
-
-<a
-    class="c0"
+  </a>
+  <a
+    class="c1"
     href="#target10"
     target="_self"
   >
     Link 10
-  </a>,
-]
+  </a>
+</nav>
 `;
