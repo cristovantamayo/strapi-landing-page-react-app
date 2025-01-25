@@ -36,7 +36,6 @@ exports[`<NavLinks /> should match snapshot 1`] = `
   .c0 {
     flex-flow: column wrap;
     align-content: center;
-    border: 1px solid green;
   }
 }
 
