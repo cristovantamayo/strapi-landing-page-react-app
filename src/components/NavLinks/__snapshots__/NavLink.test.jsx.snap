@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<NavLink /> should match snapshot 1`] = `
+exports[`<NavLinks /> should match snapshot 1`] = `
 .c0 {
   display: flex;
   flex-flow: row wrap;

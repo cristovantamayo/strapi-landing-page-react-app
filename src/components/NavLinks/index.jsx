@@ -2,7 +2,7 @@ import P from "prop-types";
 import * as Styled from "./styles";
 import { MenuLink } from "../MenuLink";
 
-export const NavLink = ({ links = [] }) => {
+export const NavLinks = ({ links = [] }) => {
   return (
     <Styled.Container>
       {links.map((link) => (
@@ -12,7 +12,7 @@ export const NavLink = ({ links = [] }) => {
   );
 };
 
-NavLink.propTypes = {
+NavLinks.propTypes = {
   links: P.arrayOf(
     P.shape({
       children: P.string.isRequired,
