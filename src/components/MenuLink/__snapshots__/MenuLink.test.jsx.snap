@@ -30,7 +30,7 @@ exports[`<MenuLink /> should render open in a new tab 1`] = `
 <a
   class="c0"
   href="http://localhost"
-  target="_blank"
+  target="_self"
 >
   Children
 </a>
