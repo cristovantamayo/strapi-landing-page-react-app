@@ -1,9 +1,9 @@
-import { NavLink } from ".";
+import { NavLinks } from "./index.jsx";
 import links from "./mock.js";
 
 export default {
-  title: "NavLink",
-  component: NavLink,
+  title: "NavLinks",
+  component: NavLinks,
   args: {
     links: links,
   },
@@ -15,7 +15,7 @@ export default {
 export const Template = (args) => {
   return (
     <div>
-      <NavLink {...args} />
+      <NavLinks {...args} />
     </div>
   );
 };
