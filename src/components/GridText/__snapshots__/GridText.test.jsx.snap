@@ -85,7 +85,7 @@ exports[`<GridText /> should render GridText with background 1`] = `
         >
           My grid
         </h2>
-        <p
+        <div
           class="c5 c6"
         >
           Atque dolorum, quibusdam
@@ -94,7 +94,7 @@ exports[`<GridText /> should render GridText with background 1`] = `
     quisquam quisquam, quas,
     voluptate quos laboriosam
     voluptatum.
-        </p>
+        </div>
         <div
           class="c7"
         >
@@ -106,7 +106,7 @@ exports[`<GridText /> should render GridText with background 1`] = `
             >
               Teste 1
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem ipsum dolor sit,
@@ -117,7 +117,7 @@ exports[`<GridText /> should render GridText with background 1`] = `
       distinctio veritatis unde,
       reprehenderit minus ad dolores
       provident maiores.
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -127,7 +127,7 @@ exports[`<GridText /> should render GridText with background 1`] = `
             >
               Teste 2
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem ipsum dolor sit,
@@ -138,7 +138,7 @@ exports[`<GridText /> should render GridText with background 1`] = `
       distinctio veritatis unde,
       reprehenderit minus ad dolores
       provident maiores.
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -148,7 +148,7 @@ exports[`<GridText /> should render GridText with background 1`] = `
             >
               Teste 3
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem ipsum dolor sit,
@@ -159,7 +159,7 @@ exports[`<GridText /> should render GridText with background 1`] = `
       distinctio veritatis unde,
       reprehenderit minus ad dolores
       provident maiores.
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -253,7 +253,7 @@ exports[`<GridText /> should render GridText without background 1`] = `
         >
           My grid
         </h2>
-        <p
+        <div
           class="c5 c6"
         >
           Atque dolorum, quibusdam
@@ -262,7 +262,7 @@ exports[`<GridText /> should render GridText without background 1`] = `
     quisquam quisquam, quas,
     voluptate quos laboriosam
     voluptatum.
-        </p>
+        </div>
         <div
           class="c7"
         >
@@ -274,7 +274,7 @@ exports[`<GridText /> should render GridText without background 1`] = `
             >
               Teste 1
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem ipsum dolor sit,
@@ -285,7 +285,7 @@ exports[`<GridText /> should render GridText without background 1`] = `
       distinctio veritatis unde,
       reprehenderit minus ad dolores
       provident maiores.
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -295,7 +295,7 @@ exports[`<GridText /> should render GridText without background 1`] = `
             >
               Teste 2
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem ipsum dolor sit,
@@ -306,7 +306,7 @@ exports[`<GridText /> should render GridText without background 1`] = `
       distinctio veritatis unde,
       reprehenderit minus ad dolores
       provident maiores.
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -316,7 +316,7 @@ exports[`<GridText /> should render GridText without background 1`] = `
             >
               Teste 3
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem ipsum dolor sit,
@@ -327,7 +327,7 @@ exports[`<GridText /> should render GridText without background 1`] = `
       distinctio veritatis unde,
       reprehenderit minus ad dolores
       provident maiores.
-            </p>
+            </div>
           </div>
         </div>
       </div>

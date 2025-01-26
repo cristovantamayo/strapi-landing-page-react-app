@@ -60,7 +60,7 @@ exports[`<GridContent /> should render grid content component 1`] = `
         <div
           class="c4"
         >
-          <p
+          <div
             class="c5"
           >
             <h1>
@@ -157,7 +157,7 @@ exports[`<GridContent /> should render grid content component 1`] = `
 				
               </code>
             </pre>
-          </p>
+          </div>
         </div>
       </div>
     </div>
@@ -227,7 +227,7 @@ exports[`<GridContent /> should render grid content component with background 1`
         <div
           class="c4"
         >
-          <p
+          <div
             class="c5"
           >
             <h1>
@@ -324,7 +324,7 @@ exports[`<GridContent /> should render grid content component with background 1`
 				
               </code>
             </pre>
-          </p>
+          </div>
         </div>
       </div>
     </div>
@@ -392,7 +392,7 @@ exports[`<GridContent /> should render grid content component without background
         <div
           class="c4"
         >
-          <p
+          <div
             class="c5"
           >
             <h1>
@@ -489,7 +489,7 @@ exports[`<GridContent /> should render grid content component without background
 				
               </code>
             </pre>
-          </p>
+          </div>
         </div>
       </div>
     </div>

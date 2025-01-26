@@ -73,11 +73,11 @@ exports[`<GridImage /> should render GridText with background 1`] = `
         >
           My grid
         </h2>
-        <p
+        <div
           class="c4 c5"
         >
           Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
-        </p>
+        </div>
         <div
           class="c6"
         >
@@ -89,7 +89,7 @@ exports[`<GridImage /> should render GridText with background 1`] = `
               class="c8"
               src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=800&h=800"
             />
-            <p
+            <div
               class="c4 c5"
             />
           </div>
@@ -101,7 +101,7 @@ exports[`<GridImage /> should render GridText with background 1`] = `
               class="c8"
               src="https://images.unsplash.com/photo-1496483648148-47c686dc86a8?w=800&h=800"
             />
-            <p
+            <div
               class="c4 c5"
             />
           </div>
@@ -113,7 +113,7 @@ exports[`<GridImage /> should render GridText with background 1`] = `
               class="c8"
               src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=800"
             />
-            <p
+            <div
               class="c4 c5"
             />
           </div>
@@ -125,7 +125,7 @@ exports[`<GridImage /> should render GridText with background 1`] = `
               class="c8"
               src="https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg?w=800&h=800"
             />
-            <p
+            <div
               class="c4 c5"
             />
           </div>
@@ -137,7 +137,7 @@ exports[`<GridImage /> should render GridText with background 1`] = `
               class="c8"
               src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?w=800&h=800"
             />
-            <p
+            <div
               class="c4 c5"
             />
           </div>
@@ -149,7 +149,7 @@ exports[`<GridImage /> should render GridText with background 1`] = `
               class="c8"
               src="https://images.unsplash.com/photo-1496483648148-47c686dc86a8?w=800&h=800"
             />
-            <p
+            <div
               class="c4 c5"
             />
           </div>
@@ -233,11 +233,11 @@ exports[`<GridImage /> should render GridText without background 1`] = `
         >
           My grid
         </h2>
-        <p
+        <div
           class="c4 c5"
         >
           Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
-        </p>
+        </div>
         <div
           class="c6"
         >
@@ -249,7 +249,7 @@ exports[`<GridImage /> should render GridText without background 1`] = `
               class="c8"
               src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=800&h=800"
             />
-            <p
+            <div
               class="c4 c5"
             />
           </div>
@@ -261,7 +261,7 @@ exports[`<GridImage /> should render GridText without background 1`] = `
               class="c8"
               src="https://images.unsplash.com/photo-1496483648148-47c686dc86a8?w=800&h=800"
             />
-            <p
+            <div
               class="c4 c5"
             />
           </div>
@@ -273,7 +273,7 @@ exports[`<GridImage /> should render GridText without background 1`] = `
               class="c8"
               src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=800"
             />
-            <p
+            <div
               class="c4 c5"
             />
           </div>
@@ -285,7 +285,7 @@ exports[`<GridImage /> should render GridText without background 1`] = `
               class="c8"
               src="https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg?w=800&h=800"
             />
-            <p
+            <div
               class="c4 c5"
             />
           </div>
@@ -297,7 +297,7 @@ exports[`<GridImage /> should render GridText without background 1`] = `
               class="c8"
               src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?w=800&h=800"
             />
-            <p
+            <div
               class="c4 c5"
             />
           </div>
@@ -309,7 +309,7 @@ exports[`<GridImage /> should render GridText without background 1`] = `
               class="c8"
               src="https://images.unsplash.com/photo-1496483648148-47c686dc86a8?w=800&h=800"
             />
-            <p
+            <div
               class="c4 c5"
             />
           </div>
