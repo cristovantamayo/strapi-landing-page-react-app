@@ -25,7 +25,7 @@ describe("<GridContent />", () => {
 
   it("should render grid content component without background", () => {
     const { container } = renderTheme(
-      <GridContent {...mock} background={false} />,
+      <GridContent {...mock} background={undefined} />,
     );
     expect(container).toMatchSnapshot();
   });
