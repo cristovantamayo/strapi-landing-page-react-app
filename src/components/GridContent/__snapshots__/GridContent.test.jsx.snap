@@ -58,11 +58,11 @@ exports[`<GridContent /> should render grid content component 1`] = `
         aria-label="Grid Content"
         class="c2"
       >
-        <h1
+        <h2
           class="c3"
         >
           My wanted Title
-        </h1>
+        </h2>
         <div
           class="c4"
         >
@@ -231,11 +231,11 @@ exports[`<GridContent /> should render grid content component with background 1`
         aria-label="Grid Content"
         class="c2"
       >
-        <h1
+        <h2
           class="c3"
         >
           My wanted Title
-        </h1>
+        </h2>
         <div
           class="c4"
         >
@@ -402,11 +402,11 @@ exports[`<GridContent /> should render grid content component without background
         aria-label="Grid Content"
         class="c2"
       >
-        <h1
+        <h2
           class="c3"
         >
           My wanted Title
-        </h1>
+        </h2>
         <div
           class="c4"
         >
