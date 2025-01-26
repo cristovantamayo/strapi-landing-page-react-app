@@ -5,10 +5,6 @@ export const Container = styled.div`
     text-align: center;
     max-width: 60rem;
     margin: 0 auto;
-
-    @media ${theme.media.lessMedium} {
-      max-width: 40rem;
-    }
   `}
 `;
 

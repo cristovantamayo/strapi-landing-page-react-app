@@ -7,12 +7,6 @@ import mock from "./mock";
 describe("<GridContent />", () => {
   it("should render grid content component", () => {
     const { container } = renderTheme(<GridContent {...mock} />);
-    const target = screen.getByLabelText("Grid Content");
-    expect(target).toBeInTheDocument();
-    expect(target).toHaveStyleRule("max-width", "40rem", {
-      media: "(max-width:  768px)",
-    });
-
     expect(container).toMatchSnapshot();
   });
 
