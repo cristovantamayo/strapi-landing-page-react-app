@@ -25,6 +25,7 @@
       "export const Container = styled.div`",
       "\t${({ theme }) => css``}",
       "`;",
+      "",
     ],
     "description": "styled-components boilerplate",
   },
