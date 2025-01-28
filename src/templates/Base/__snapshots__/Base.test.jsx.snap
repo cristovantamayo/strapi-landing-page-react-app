@@ -888,11 +888,7 @@ exports[`<Base /> should render the template Base 1`] = `
       >
         <div
           class="c13 c14"
-        >
-          <p>
-            Teste de Footer
-          </p>
-        </div>
+        />
       </div>
     </footer>
   </div>
