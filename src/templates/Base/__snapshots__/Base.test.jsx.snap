@@ -1,0 +1,918 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Base /> should render the template Base 1`] = `
+.c4 {
+  mex-height: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+.c7 {
+  color: #0A1128;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.c12 {
+  color: #FFFFFF;
+  font-size: 5.6rem;
+  text-transform: uppercase;
+}
+
+.c17 {
+  color: #FFFFFF;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.c19 {
+  color: #0A1128;
+  font-size: 5.6rem;
+  text-transform: uppercase;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: #DDDDDD;
+  background: #FFFFFF;
+  transition: all 300ms ease-in-out;
+}
+
+.c2 >.c3 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.c2 .c6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c5 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.c0 {
+  z-index: 6;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  background: #0A1128;
+  color: #FFFFFF;
+  border: none;
+  display: none;
+  pointer-events: all;
+}
+
+.c0 >svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.c8 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c8 >img {
+  max-height: 2.3rem;
+}
+
+.c9 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c14 {
+  font-size: 2.4rem;
+}
+
+.c20 {
+  text-align: center;
+  font-size: 1.6rem;
+  border-top: 0.1rem solid #DDDDDD;
+}
+
+.c20 p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.c20 a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.c20 .c13 {
+  font-size: 1.6rem;
+}
+
+.c20 .c3 {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.c21 {
+  position: fixed;
+  background: #0A1128;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 6;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+
+.c21:hover {
+  opacity: 1;
+  background: red;
+}
+
+.c11 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 120rem;
+}
+
+.c11 .c13 {
+  margin-bottom: 6.4rem;
+}
+
+.c15 {
+  counter-reset: grid-counter;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 6.4rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.c16 .c6 {
+  position: relative;
+  left: 5rem;
+}
+
+.c16 .c6::before {
+  counter-increment: grid-counter;
+  content: counter(grid-counter);
+  position: absolute;
+  font-size: 6.4rem;
+  top: -3.5rem;
+  left: -4rem;
+  transform: rotate(10deg);
+}
+
+.c10 {
+  background: #FFFFFF;
+  color: #0A1128;
+  background: #0A1128;
+  color: #FFFFFF;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.c18 {
+  background: #FFFFFF;
+  color: #0A1128;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .c12 {
+    font-size: 4.0rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .c19 {
+    font-size: 4.0rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .c2 {
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .c2 >.c3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    align-items: center;
+    overflow-y: auto;
+  }
+
+  .c2 .c6 {
+    padding-bottom: 3.2rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .c5 {
+    display: block;
+    text-align: center;
+    padding: 4.8rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .c0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .c9 {
+    flex-flow: column wrap;
+    align-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .c15 {
+    grid-template-columns: 1fr;
+  }
+}
+
+<div>
+  <button
+    aria-label="Open/Close menu"
+    class="c0"
+  >
+    <svg
+      aria-hidden="true"
+      aria-label="Open menu"
+      class="c1"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+      />
+    </svg>
+  </button>
+  <div
+    class="c2"
+  >
+    <div
+      class="c3 c4"
+    >
+      <div
+        class="c5"
+      >
+        <h1
+          class="c6 c7"
+        >
+          <a
+            class="c8"
+            href="#"
+          >
+            Logo
+          </a>
+        </h1>
+        <nav
+          aria-label="Main menu"
+          class="c9"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class=""
+  >
+    <div
+      class="c10"
+    >
+      <div
+        class="c3 c4"
+      >
+        <div
+          class="c11"
+        >
+          <h2
+            class="c6 c12"
+          >
+            My grid
+          </h2>
+          <div
+            class="c13 c14"
+          >
+            Atque dolorum, quibusdam
+    quisquam, quas, voluptate
+    quos laboriosam voluptatum,
+    quisquam quisquam, quas,
+    voluptate quos laboriosam
+    voluptatum.
+          </div>
+          <div
+            class="c15"
+          >
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c17"
+              >
+                Teste 1
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c17"
+              >
+                Teste 2
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c17"
+              >
+                Teste 3
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c18"
+    >
+      <div
+        class="c3 c4"
+      >
+        <div
+          class="c11"
+        >
+          <h2
+            class="c6 c19"
+          >
+            My grid
+          </h2>
+          <div
+            class="c13 c14"
+          >
+            Atque dolorum, quibusdam
+    quisquam, quas, voluptate
+    quos laboriosam voluptatum,
+    quisquam quisquam, quas,
+    voluptate quos laboriosam
+    voluptatum.
+          </div>
+          <div
+            class="c15"
+          >
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c7"
+              >
+                Teste 1
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c7"
+              >
+                Teste 2
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c7"
+              >
+                Teste 3
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      <div
+        class="c3 c4"
+      >
+        <div
+          class="c11"
+        >
+          <h2
+            class="c6 c12"
+          >
+            My grid
+          </h2>
+          <div
+            class="c13 c14"
+          >
+            Atque dolorum, quibusdam
+    quisquam, quas, voluptate
+    quos laboriosam voluptatum,
+    quisquam quisquam, quas,
+    voluptate quos laboriosam
+    voluptatum.
+          </div>
+          <div
+            class="c15"
+          >
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c17"
+              >
+                Teste 1
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c17"
+              >
+                Teste 2
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c17"
+              >
+                Teste 3
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c18"
+    >
+      <div
+        class="c3 c4"
+      >
+        <div
+          class="c11"
+        >
+          <h2
+            class="c6 c19"
+          >
+            My grid
+          </h2>
+          <div
+            class="c13 c14"
+          >
+            Atque dolorum, quibusdam
+    quisquam, quas, voluptate
+    quos laboriosam voluptatum,
+    quisquam quisquam, quas,
+    voluptate quos laboriosam
+    voluptatum.
+          </div>
+          <div
+            class="c15"
+          >
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c7"
+              >
+                Teste 1
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c7"
+              >
+                Teste 2
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c7"
+              >
+                Teste 3
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      <div
+        class="c3 c4"
+      >
+        <div
+          class="c11"
+        >
+          <h2
+            class="c6 c12"
+          >
+            My grid
+          </h2>
+          <div
+            class="c13 c14"
+          >
+            Atque dolorum, quibusdam
+    quisquam, quas, voluptate
+    quos laboriosam voluptatum,
+    quisquam quisquam, quas,
+    voluptate quos laboriosam
+    voluptatum.
+          </div>
+          <div
+            class="c15"
+          >
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c17"
+              >
+                Teste 1
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c17"
+              >
+                Teste 2
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c17"
+              >
+                Teste 3
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c18"
+    >
+      <div
+        class="c3 c4"
+      >
+        <div
+          class="c11"
+        >
+          <h2
+            class="c6 c19"
+          >
+            My grid
+          </h2>
+          <div
+            class="c13 c14"
+          >
+            Atque dolorum, quibusdam
+    quisquam, quas, voluptate
+    quos laboriosam voluptatum,
+    quisquam quisquam, quas,
+    voluptate quos laboriosam
+    voluptatum.
+          </div>
+          <div
+            class="c15"
+          >
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c7"
+              >
+                Teste 1
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c7"
+              >
+                Teste 2
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+            <div
+              class="c16"
+            >
+              <h3
+                class="c6 c7"
+              >
+                Teste 3
+              </h3>
+              <div
+                class="c13 c14"
+              >
+                Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit.
+      Debitis cum delectus molestias.
+      Atque doloribus nobis laudantium
+      esse ut, non commodi maxime
+      distinctio veritatis unde,
+      reprehenderit minus ad dolores
+      provident maiores.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="c20"
+    >
+      <div
+        class="c3 c4"
+      >
+        <div
+          class="c13 c14"
+        >
+          <p>
+            Teste de Footer
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <a
+    aria-label="Go to top"
+    class="c21"
+    href="#"
+  >
+    <svg
+      aria-hidden="true"
+      class="c1"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"
+      />
+    </svg>
+  </a>
+</div>
+`;
