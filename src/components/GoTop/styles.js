@@ -14,5 +14,11 @@ export const Container = styled.a`
     right: 2rem;
     z-index: 6;
     opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+      background: red;
+    }
   `}
 `;
