@@ -1,5 +1,9 @@
 import { describe } from "@jest/globals";
-import { mapSections, mapSectionTwoColumns } from "./map-sections";
+import {
+  mapSections,
+  mapSectionTwoColumns,
+  mapSectionContent,
+} from "./map-sections";
 
 describe("map-sections", () => {
   it("should render predefined section id no data", () => {
@@ -62,6 +66,42 @@ describe("map-sections", () => {
     expect(data.sectionId).toBe("contact");
     expect(data.srcImg).toBe("a.svg");
     expect(data.text).toBe("abc");
+    expect(data.title).toBe("January brings us Firefox 85");
+  });
+
+  it("should map section content with no content", () => {
+    const data = mapSectionContent();
+    expect(data.background).toBe(false);
+    expect(data.component).toBe("");
+    expect(data.sectionId).toBe("");
+    expect(data.html).toBe("");
+    expect(data.title).toBe("");
+  });
+
+  it("should map section content", () => {
+    const data = mapSectionContent({
+      __component: "section.section-content",
+      _id: "602fdf2d540c00269e056178",
+      title: "January brings us Firefox 85",
+      content: "abc",
+      metadata: {
+        background: false,
+        _id: "602fdf2d540c00269e05617b",
+        name: "contact",
+        section_id: "contact",
+        __v: 0,
+        id: "602fdf2d540c00269e05617b",
+      },
+      __v: 1,
+      image: {
+        url: "a.svg",
+      },
+      id: "602fdf2d540c00269e056178",
+    });
+    expect(data.background).toBe(false);
+    expect(data.component).toBe("section.section-content");
+    expect(data.sectionId).toBe("contact");
+    expect(data.html).toBe("abc");
     expect(data.title).toBe("January brings us Firefox 85");
   });
 });
