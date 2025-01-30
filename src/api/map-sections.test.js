@@ -7,10 +7,45 @@ import {
   mapImageGrid,
 } from "./map-sections";
 
+import fakePagesData from "./dados.json";
+
 describe("map-sections", () => {
   it("should render predefined section id no data", () => {
     const data = mapSections();
     expect(data).toEqual([]);
+  });
+
+  it("should render section with data", () => {
+    const data = mapSections(fakePagesData[0].sections);
+    expect(data[0].component).toBe("section.section-two-columns");
+  });
+
+  it("should test section with invalid data", () => {
+    const withNoTextOrImageGrid = mapSections([
+      {
+        __component: "section.section-grid",
+      },
+    ]);
+
+    const WithNoComponent = mapSections([{}]);
+    expect(withNoTextOrImageGrid).toEqual([
+      { __component: "section.section-grid" },
+    ]);
+    expect(WithNoComponent).toEqual([{}]);
+  });
+
+  it("should validate section grid without image grid or text grid", () => {
+    const withoutImageOrTextGrid = mapSections([
+      {
+        __component: "section.section-grid",
+        image_grid: [{}],
+      },
+      {
+        __component: "section.section-grid",
+        text_grid: [{}],
+      },
+    ]);
+    expect(withoutImageOrTextGrid.length).toBe(2);
   });
 
   it("should map sections two columns", () => {
