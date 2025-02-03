@@ -1,5 +1,5 @@
-import mock from "../../components/NavLinks/mock";
-import { NavLinks } from "../../components/NavLinks/index";
+import linksMock from "../../components/NavLinks/mock";
+
 import gridMock from "../../components/GridText/mock";
 import { GridText } from "../../components/GridText";
 
@@ -14,7 +14,7 @@ export const mockBase = {
       <GridText {...gridMock} />
     </>
   ),
-  inks: mock,
+  inks: linksMock,
   logoData: {
     text: "Logo",
     link: "#",
