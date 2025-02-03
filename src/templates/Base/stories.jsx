@@ -1,8 +1,7 @@
 import { Base } from ".";
 
 import { GridText } from "../../components/GridText";
-import mock from "./mock";
-import mockBase from "./mock";
+import { mockBase } from "./mock";
 
 export default {
   title: "Templates/Base",

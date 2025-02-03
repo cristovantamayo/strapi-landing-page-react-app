@@ -1,5 +1,5 @@
-import { NavLinks } from "./index.jsx";
-import links from "./mock.js";
+import { NavLinks } from ".";
+import links from "./mock";
 
 export default {
   title: "NavLinks",
