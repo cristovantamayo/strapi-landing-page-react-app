@@ -4,7 +4,7 @@ export const mapMenu = (menuData = {}) => {
     logo_text: text = "",
     logo_link: link = "",
     logo: { url: srcImg = "" } = "",
-    menu_links: links = [],
+    menu: links = [],
   } = menuData;
   return {
     newTab,
