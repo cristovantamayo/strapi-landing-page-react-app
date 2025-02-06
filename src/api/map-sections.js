@@ -3,7 +3,7 @@ export const mapSections = (sections = []) => {
     if (section.__component === "section.section-two-columns") {
       return mapSectionTwoColumns(section);
     }
-    if (section.__component === "section.section-content") {
+    if (section.__component === "section.section-one-content") {
       return mapSectionContent(section);
     }
     if (section.__component === "section.section-grid") {
@@ -27,9 +27,8 @@ export const mapSectionTwoColumns = (section = []) => {
     title = "",
     description: text = "",
     image: { url: srcImg = "" } = "",
-    metadata: { background = false, section_id: sectionId = "" } = false,
+    metadata: [{ background = false, section_id: sectionId = "" }] = false,
   } = section;
-
   return {
     component,
     title,
@@ -48,7 +47,6 @@ export const mapTextGrid = (section = {}) => {
     metadata: { background = false, section_id: sectionId = "" } = false,
     text_grid: grid = [],
   } = section;
-
   return {
     component: "section.section-grid-text",
     title,
@@ -66,6 +64,7 @@ export const mapTextGrid = (section = {}) => {
 };
 
 export const mapImageGrid = (section = {}) => {
+  console;
   const {
     __component: component = "",
     title = "",
@@ -73,7 +72,6 @@ export const mapImageGrid = (section = {}) => {
     metadata: { background = false, section_id: sectionId = "" } = false,
     image_grid: grid = [],
   } = section;
-
   return {
     component: "section.section-grid-image",
     title,
@@ -81,9 +79,8 @@ export const mapImageGrid = (section = {}) => {
     sectionId,
     description,
     grid: grid.map((img) => {
-      const {
-        image: { url: srcImg = "", alternativeText: altText = "" } = "",
-      } = img;
+      const srcImg = img.url;
+      const altText = img.alternativeText;
       return {
         srcImg,
         altText,
@@ -92,14 +89,26 @@ export const mapImageGrid = (section = {}) => {
   };
 };
 
+const builderContext = (html) => {
+  return html
+    .map((item) => {
+      return `
+      <span>${item.children[0].text}</span>
+    `;
+    })
+    .join("");
+};
+
 export const mapSectionContent = (section = {}) => {
   const {
     __component: component = "",
     title = "",
-    content: html = "",
+    content = "",
     srcImg,
     metadata: { background = false, section_id: sectionId = "" } = false,
   } = section;
+
+  const html = builderContext(content);
 
   return {
     component,
