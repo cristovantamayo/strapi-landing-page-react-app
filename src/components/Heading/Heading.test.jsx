@@ -12,8 +12,8 @@ describe("<Heading />", () => {
 
     expect(heading).toHaveStyle({
       color: theme.colors.primaryColor,
-      "font-size": theme.font.sizes.huge,
-      "text-transform": "uppercase",
+      "font-size": theme.font.sizes.xHuge,
+      "text-transform": "none",
     });
   });
 
@@ -56,12 +56,12 @@ describe("<Heading />", () => {
 
     rerender(
       <ThemeProvider theme={theme}>
-        <Heading size="huge">texto</Heading>
+        <Heading size="xhuge">texto</Heading>
       </ThemeProvider>,
     );
 
     expect(screen.getByRole("heading", { name: "texto" })).toHaveStyle({
-      "font-size": theme.font.sizes.huge,
+      "font-size": theme.font.sizes.xXHuge,
     });
   });
 
@@ -74,7 +74,7 @@ describe("<Heading />", () => {
   });
 
   it("should render with uppercase letters", () => {
-    renderTheme(<Heading uppercase>texto</Heading>);
+    renderTheme(<Heading upperCase>texto</Heading>);
     const heading = screen.getByRole("heading", { name: "texto" });
 
     expect(heading).toHaveStyle({

@@ -3,7 +3,7 @@
 exports[`<GridContent /> should render grid content component 1`] = `
 .c2 {
   text-align: center;
-  max-width: 60rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -12,9 +12,10 @@ exports[`<GridContent /> should render grid content component 1`] = `
 }
 
 .c1 {
-  mex-height: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {
@@ -27,12 +28,18 @@ exports[`<GridContent /> should render grid content component 1`] = `
 
 .c3 {
   color: #0A1128;
-  font-size: 5.6rem;
-  text-transform: none;
+  font-size: 6.8rem;
+  text-transform: uppercase;
 }
 
 .c5 {
   font-size: 2.4rem;
+}
+
+@media (max-width: 768px) {
+  .c2 {
+    max-width: 60rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -52,11 +59,11 @@ exports[`<GridContent /> should render grid content component 1`] = `
         aria-label="Grid Content"
         class="c2"
       >
-        <h2
+        <h1
           class="c3"
         >
           My wanted Title
-        </h2>
+        </h1>
         <div
           class="c4"
         >
@@ -168,7 +175,7 @@ exports[`<GridContent /> should render grid content component 1`] = `
 exports[`<GridContent /> should render grid content component with background 1`] = `
 .c2 {
   text-align: center;
-  max-width: 60rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -177,9 +184,10 @@ exports[`<GridContent /> should render grid content component with background 1`
 }
 
 .c1 {
-  mex-height: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {
@@ -194,12 +202,18 @@ exports[`<GridContent /> should render grid content component with background 1`
 
 .c3 {
   color: #FFFFFF;
-  font-size: 5.6rem;
-  text-transform: none;
+  font-size: 6.8rem;
+  text-transform: uppercase;
 }
 
 .c5 {
   font-size: 2.4rem;
+}
+
+@media (max-width: 768px) {
+  .c2 {
+    max-width: 60rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -219,11 +233,11 @@ exports[`<GridContent /> should render grid content component with background 1`
         aria-label="Grid Content"
         class="c2"
       >
-        <h2
+        <h1
           class="c3"
         >
           My wanted Title
-        </h2>
+        </h1>
         <div
           class="c4"
         >
@@ -335,7 +349,7 @@ exports[`<GridContent /> should render grid content component with background 1`
 exports[`<GridContent /> should render grid content component without background 1`] = `
 .c2 {
   text-align: center;
-  max-width: 60rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -344,9 +358,10 @@ exports[`<GridContent /> should render grid content component without background
 }
 
 .c1 {
-  mex-height: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {
@@ -359,12 +374,18 @@ exports[`<GridContent /> should render grid content component without background
 
 .c3 {
   color: #0A1128;
-  font-size: 5.6rem;
-  text-transform: none;
+  font-size: 6.8rem;
+  text-transform: uppercase;
 }
 
 .c5 {
   font-size: 2.4rem;
+}
+
+@media (max-width: 768px) {
+  .c2 {
+    max-width: 60rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -384,11 +405,11 @@ exports[`<GridContent /> should render grid content component without background
         aria-label="Grid Content"
         class="c2"
       >
-        <h2
+        <h1
           class="c3"
         >
           My wanted Title
-        </h2>
+        </h1>
         <div
           class="c4"
         >

@@ -3,14 +3,14 @@
 exports[`<GridText /> should render GridText with background 1`] = `
 .c4 {
   color: #0A1128;
-  font-size: 5.6rem;
+  font-size: 6.8rem;
   text-transform: uppercase;
 }
 
 .c9 {
   color: #0A1128;
   font-size: 2.4rem;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .c6 {
@@ -18,10 +18,8 @@ exports[`<GridText /> should render GridText with background 1`] = `
 }
 
 .c2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 120rem;
+  max-width: 128rem;
+  margin: 0 auto;
 }
 
 .c2 .c5 {
@@ -33,13 +31,16 @@ exports[`<GridText /> should render GridText with background 1`] = `
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 6.4rem;
-  overflow: hidden;
   width: 100%;
 }
 
 .c8 .c3 {
+  display: inline-block;
   position: relative;
   left: 5rem;
+  height: 7rem;
+  font-size: 4.0rem;
+  padding-left: 3rem;
 }
 
 .c8 .c3::before {
@@ -47,15 +48,16 @@ exports[`<GridText /> should render GridText with background 1`] = `
   content: counter(grid-counter);
   position: absolute;
   font-size: 6.4rem;
-  top: -3.5rem;
+  top: -1.7rem;
   left: -4rem;
   transform: rotate(10deg);
 }
 
 .c1 {
-  mex-height: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {
@@ -88,11 +90,11 @@ exports[`<GridText /> should render GridText with background 1`] = `
       <div
         class="c2"
       >
-        <h2
+        <h1
           class="c3 c4"
         >
           My grid
-        </h2>
+        </h1>
         <div
           class="c5 c6"
         >
@@ -179,14 +181,14 @@ exports[`<GridText /> should render GridText with background 1`] = `
 exports[`<GridText /> should render GridText without background 1`] = `
 .c4 {
   color: #0A1128;
-  font-size: 5.6rem;
+  font-size: 6.8rem;
   text-transform: uppercase;
 }
 
 .c9 {
   color: #0A1128;
   font-size: 2.4rem;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .c6 {
@@ -194,10 +196,8 @@ exports[`<GridText /> should render GridText without background 1`] = `
 }
 
 .c2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 120rem;
+  max-width: 128rem;
+  margin: 0 auto;
 }
 
 .c2 .c5 {
@@ -209,13 +209,16 @@ exports[`<GridText /> should render GridText without background 1`] = `
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 6.4rem;
-  overflow: hidden;
   width: 100%;
 }
 
 .c8 .c3 {
+  display: inline-block;
   position: relative;
   left: 5rem;
+  height: 7rem;
+  font-size: 4.0rem;
+  padding-left: 3rem;
 }
 
 .c8 .c3::before {
@@ -223,15 +226,16 @@ exports[`<GridText /> should render GridText without background 1`] = `
   content: counter(grid-counter);
   position: absolute;
   font-size: 6.4rem;
-  top: -3.5rem;
+  top: -1.7rem;
   left: -4rem;
   transform: rotate(10deg);
 }
 
 .c1 {
-  mex-height: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {
@@ -264,11 +268,11 @@ exports[`<GridText /> should render GridText without background 1`] = `
       <div
         class="c2"
       >
-        <h2
+        <h1
           class="c3 c4"
         >
           My grid
-        </h2>
+        </h1>
         <div
           class="c5 c6"
         >
