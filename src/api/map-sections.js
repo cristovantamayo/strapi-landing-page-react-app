@@ -64,7 +64,6 @@ export const mapTextGrid = (section = {}) => {
 };
 
 export const mapImageGrid = (section = {}) => {
-  console;
   const {
     __component: component = "",
     title = "",
@@ -90,7 +89,6 @@ export const mapImageGrid = (section = {}) => {
 };
 
 const builderContext = (html) => {
-  console.log(html);
   return html
     .map((item) => {
       return `

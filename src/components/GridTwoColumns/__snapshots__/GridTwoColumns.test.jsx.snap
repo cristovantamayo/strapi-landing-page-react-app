@@ -3,8 +3,8 @@
 exports[`<GridTwoColumns /> should render Two columns grid 1`] = `
 .c5 {
   color: #0A1128;
-  font-size: 5.6rem;
-  text-transform: none;
+  font-size: 6.4rem;
+  text-transform: uppercase;
 }
 
 .c2 {
@@ -13,6 +13,8 @@ exports[`<GridTwoColumns /> should render Two columns grid 1`] = `
   align-items: center;
   justify-content: center;
   gap: 3.2rem;
+  max-width: 160rem;
+  margin: 0 auto;
 }
 
 .c2 .c4 {
@@ -24,9 +26,10 @@ exports[`<GridTwoColumns /> should render Two columns grid 1`] = `
 }
 
 .c1 {
-  mex-height: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 
 import { GridTwoColumns } from "../../components/GridTwoColumns";
 import { GridContent } from "../../components/GridContent/index";
@@ -14,13 +15,18 @@ import { Loading } from "../Loading";
 function Home() {
   const [data, setData] = useState([]);
   const isMounted = useRef(true);
+  const location = useLocation();
 
   useEffect(() => {
+    const pathname = location.pathname.replace(/[^a-z0-9-_]/gi, "");
+    const slug = pathname ? pathname : "landing-page";
+    console.log("slug", slug);
     const load = async () => {
       try {
         const data = await fetch(
-          `http://localhost:1337/api/pages?populate[sections][populate]=*&populate[menu][populate]=*`,
+          `http://localhost:1337/api/pages?slug=${slug}&populate[sections][populate]=*&populate[menu][populate]=*`,
         );
+        console.log("dataFetch", data);
         const json = await data.json();
         const pageData = mapData(json.data);
 

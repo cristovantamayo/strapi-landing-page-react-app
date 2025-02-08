@@ -9,13 +9,13 @@ exports[`<LogoLink /> should match snapshot 1`] = `
 }
 
 .c1 >img {
-  max-height: 2.3rem;
+  height: 6rem;
 }
 
 .c0 {
   color: #0A1128;
   font-size: 2.4rem;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 <h1
