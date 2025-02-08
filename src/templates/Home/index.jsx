@@ -43,7 +43,7 @@ function Home() {
     return () => {
       isMounted.current = false;
     };
-  }, []);
+  }, [location]);
 
   if (data === undefined) {
     return <PageNotFound />;
