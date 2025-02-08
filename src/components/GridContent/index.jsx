@@ -8,7 +8,7 @@ export const GridContent = ({ title, html, background = false }) => {
   return (
     <SectionBackground background={background}>
       <Styled.Container aria-label="Grid Content">
-        <Heading upperCase colorDark={!background} as="h2">
+        <Heading upperCase={true} size={"xhuge"} colorDark={!background}>
           {title}
         </Heading>
         <Styled.Html>

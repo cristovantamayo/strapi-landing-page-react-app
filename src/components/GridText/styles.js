@@ -4,10 +4,8 @@ import { Container as TextComponent } from "../TextComponent/styles";
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 120rem;
+    max-width: 128rem;
+    margin: 0 auto;
     ${TextComponent} {
       margin-bottom: ${theme.spacings.xHuge};
     }
@@ -20,7 +18,6 @@ export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: ${theme.spacings.xHuge};
-    overflow: hidden;
     width: 100%;
 
     @media ${theme.media.lessMedium} {
@@ -31,9 +28,14 @@ export const Grid = styled.div`
 
 export const GridElement = styled.div`
   ${({ theme }) => css`
+
     ${HeadingContainer} {
+      display: inline-block;
       position: relative;
       left: 5rem;
+      height: 7rem;
+      font-size: ${theme.font.sizes.xLarge};
+      padding-left: 3rem;
     }
 
     ${HeadingContainer}::before {
@@ -41,7 +43,7 @@ export const GridElement = styled.div`
       content: counter(grid-counter);
       position: absolute;
       font-size: ${theme.font.sizes.xHuge};
-      top: -3.5rem;
+      top: -1.7rem;
       left: -4rem;
       transform: rotate(10deg);
   `}

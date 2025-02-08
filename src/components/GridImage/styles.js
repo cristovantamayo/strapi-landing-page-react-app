@@ -4,6 +4,10 @@ import { Container as TextComponent } from "../TextComponent/styles";
 
 export const Container = styled.div`
   ${({ theme }) => css`
+    max-width: 128rem;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
     & > ${TextComponent} {
       margin-bottom: ${theme.spacings.xHuge};
     }
@@ -15,6 +19,12 @@ export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: ${theme.spacings.large};
+    max-width: 120rem;
+    margin: 0 auto;
+
+    @media ${theme.media.lessMedium} {
+      grid-template-columns: 1fr;
+    }
   `}
 `;
 

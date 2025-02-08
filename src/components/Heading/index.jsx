@@ -25,5 +25,5 @@ Heading.propTypes = {
   colorDark: P.bool,
   as: P.oneOf(["h1", "h2", "h3", "h4", "h5", "h6"]),
   size: P.oneOf(["small", "medium", "big", "huge"]),
-  upperCase: P.bool,
+  upperCase: P.bool.isRequired,
 };

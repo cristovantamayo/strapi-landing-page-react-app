@@ -22,7 +22,6 @@ function Home() {
           `http://localhost:1337/api/pages?populate[sections][populate]=*&populate[menu][populate]=*`,
         );
         const json = await data.json();
-        //console.log(json.data);
         const pageData = mapData(json.data);
 
         setData(pageData[0]);

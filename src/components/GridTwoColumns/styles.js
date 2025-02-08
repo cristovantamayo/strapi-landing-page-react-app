@@ -8,6 +8,8 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     gap: ${theme.spacings.large};
+    max-width: 160rem;
+    margin: 0 auto;
 
     @media ${theme.media.lessMedium} {
       grid-template-columns: 1fr;
