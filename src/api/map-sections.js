@@ -90,10 +90,11 @@ export const mapImageGrid = (section = {}) => {
 };
 
 const builderContext = (html) => {
+  console.log(html);
   return html
     .map((item) => {
       return `
-      <span>${item.children[0].text}</span>
+      <p>${item.children[0].text}</p>
     `;
     })
     .join("");

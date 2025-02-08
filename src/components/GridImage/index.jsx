@@ -8,7 +8,7 @@ export const GridImage = ({ title, description, grid, background = false }) => {
   return (
     <SectionBackground background={background}>
       <Styled.Container>
-        <Heading size="huge" uppercase colorDark={!background} as="h2">
+        <Heading size="xhuge" upperCase={true} colorDark={!background}>
           {title}
         </Heading>
         <TextComponent>{description}</TextComponent>

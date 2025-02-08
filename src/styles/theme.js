@@ -19,6 +19,7 @@ export const theme = {
       xXLarge: "4.8rem",
       huge: "5.6rem",
       xHuge: "6.4rem",
+      xXHuge: "6.8rem",
     },
   },
   media: {
