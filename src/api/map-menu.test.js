@@ -16,14 +16,14 @@ describe("map-menu", () => {
       open_in_new_tab: false,
       logo_text: "Landing Page",
       logo_link: "#home",
-      menu: [
+      menu_links: [
         {
           open_in_new_tab: false,
           link_text: "pricing",
           url: "#pricing",
         },
         {
-          open_in_new_tab: false,
+          open_in_new_tab: true,
           link_text: "contact",
           url: "#contact",
         },
@@ -40,6 +40,10 @@ describe("map-menu", () => {
     expect(menu.links[0].newTab).toBe(false);
     expect(menu.links[0].children).toBe("pricing");
     expect(menu.links[0].link).toBe("#pricing");
+
+    expect(menu.links[1].newTab).toBe(true);
+    expect(menu.links[1].children).toBe("contact");
+    expect(menu.links[1].link).toBe("#contact");
   });
 
   it("should return empty array if no links", () => {

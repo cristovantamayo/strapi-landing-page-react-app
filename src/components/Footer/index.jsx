@@ -3,11 +3,11 @@ import * as Styled from "./styles";
 import { TextComponent } from "../TextComponent";
 import { SectionContainer } from "../SectionContainer/index";
 
-export const Footer = ({ html = "" }) => {
+export const Footer = ({ html: children = "" }) => {
   return (
     <Styled.Container>
       <SectionContainer>
-        <TextComponent>{html}</TextComponent>
+        <TextComponent>{children}</TextComponent>
       </SectionContainer>
     </Styled.Container>
   );

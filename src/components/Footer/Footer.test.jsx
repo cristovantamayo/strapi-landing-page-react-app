@@ -4,12 +4,13 @@ import { renderTheme } from "../../styles/render-theme";
 import { Footer } from ".";
 
 describe("<Footer />", () => {
+  it("should render the Footer component no Content", () => {
+    const { container } = renderTheme(<Footer />);
+    expect(container).toMatchSnapshot();
+  });
   it("should render the Footer component", () => {
-    const { container } = renderTheme(<Footer footerHtml="<h1>Olá</h1>" />);
-    //expect(screen.getByRole("heading", { name: "Olá" })).toBeInTheDocument();
-
-    screen.debug(container);
-
-    //expect(container).toMatchSnapshot();
+    const { container } = renderTheme(<Footer html="<h1>Olá</h1>" />);
+    expect(screen.getByRole("heading", { name: "Olá" })).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   });
 });

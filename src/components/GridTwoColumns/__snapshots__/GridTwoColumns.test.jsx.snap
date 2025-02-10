@@ -66,6 +66,7 @@ exports[`<GridTwoColumns /> should render Two columns grid 1`] = `
 <div>
   <div
     class="c0"
+    id=""
   >
     <div
       class="c1"

@@ -20,13 +20,11 @@ function Home() {
   useEffect(() => {
     const pathname = location.pathname.replace(/[^a-z0-9-_]/gi, "");
     const slug = pathname ? pathname : "landing-page";
-    console.log("slug", slug);
     const load = async () => {
       try {
         const data = await fetch(
-          `http://localhost:1337/api/pages?slug=${slug}&populate[sections][populate]=*&populate[menu][populate]=*`,
+          `http://localhost:1337/api/pages?filters[slug][$eq]=${slug}&populate[sections][populate]=*&populate[menu][populate]=*`,
         );
-        console.log("dataFetch", data);
         const json = await data.json();
         const pageData = mapData(json.data);
 

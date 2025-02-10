@@ -15,9 +15,16 @@ describe("map-sections", () => {
     expect(data).toEqual([]);
   });
 
-  it("should render section with data", () => {
+  it("should render section Two Columns with data", () => {
+    expect(Array.isArray(fakePagesData[0].sections)).toBe(true);
     const data = mapSections(fakePagesData[0].sections);
     expect(data[0].component).toBe("section.section-two-columns");
+  });
+
+  it("should render section OneContent with data", () => {
+    expect(Array.isArray(fakePagesData[0].sections)).toBe(true);
+    const data = mapSections(fakePagesData[0].sections);
+    expect(data[1].__component).toBe("section.section-content");
   });
 
   it("should test section with invalid data", () => {
@@ -58,7 +65,7 @@ describe("map-sections", () => {
     expect(data.title).toBe("");
   });
 
-  it("should map sections two columns", () => {
+  it("should map sections two columns with Data", () => {
     const data = mapSectionTwoColumns({
       __component: "section.section-two-columns",
       title: "January brings us Firefox 85",
@@ -90,23 +97,31 @@ describe("map-sections", () => {
   });
 
   it("should map section content", () => {
-    const data = mapSectionContent({
-      __component: "section.section-content",
-      title: "January brings us Firefox 85",
-      content: "abc",
-      metadata: {
-        background: false,
-        section_id: "contact",
+    const data = mapSections([
+      {
+        __component: "section.section-one-content",
+        title: "January brings us Firefox 85",
+        content: [
+          { children: [{ text: "abc" }] },
+          { children: [{ text: "def" }] },
+        ],
+        metadata: {
+          background: false,
+          section_id: "contact",
+        },
+        image: {
+          url: "a.svg",
+        },
       },
-      image: {
-        url: "a.svg",
-      },
-    });
-    expect(data.background).toBe(false);
-    expect(data.component).toBe("section.section-content");
-    expect(data.sectionId).toBe("contact");
-    expect(data.html).toBe("abc");
-    expect(data.title).toBe("January brings us Firefox 85");
+    ]);
+
+    expect(data[0].background).toBe(false);
+    expect(data[0].component).toBe("section.section-one-content");
+    expect(data[0].sectionId).toBe("contact");
+    expect(data[0].html.trim().replace(/[^<>//a-z]/gi, "")).toBe(
+      "<p>abc</p><p>def</p>",
+    );
+    expect(data[0].title).toBe("January brings us Firefox 85");
   });
 
   it("should map text grid with data", () => {
@@ -173,44 +188,32 @@ describe("map-sections", () => {
       text_grid: [],
       image_grid: [
         {
-          image: {
-            alternativeText: "abc",
-            url: "a.svg",
-          },
+          alternativeText: "abc",
+          url: "a.svg",
         },
         {
-          image: {
-            alternativeText: "Um livro grande aberto",
-            url: "https://res.cloudinary.com/dlizakp2a/image/upload/v1613749814/360x360_r_1_c073b11d09.jpg",
-          },
+          alternativeText: "Um livro grande aberto",
+          url: "https://res.cloudinary.com/dlizakp2a/image/upload/v1613749814/360x360_r_1_c073b11d09.jpg",
         },
         {
-          image: {
-            alternativeText: "Imagem do topo de uma cidade grande",
-            url: "https://res.cloudinary.com/dlizakp2a/image/upload/v1613749814/360x360_r_2_38651a645b.jpg",
-          },
+          alternativeText: "Imagem do topo de uma cidade grande",
+          url: "https://res.cloudinary.com/dlizakp2a/image/upload/v1613749814/360x360_r_2_38651a645b.jpg",
         },
         {
           __v: 0,
-          image: {
-            alternativeText: "Filme para câmeras antigas",
-            url: "https://res.cloudinary.com/dlizakp2a/image/upload/v1613749814/360x360_r_1_9d32ada1f9.jpg",
-          },
+          alternativeText: "Filme para câmeras antigas",
+          url: "https://res.cloudinary.com/dlizakp2a/image/upload/v1613749814/360x360_r_1_9d32ada1f9.jpg",
         },
         {
           _id: "602fdf2d540c00269e056187",
           __v: 0,
-          image: {
-            alternativeText: "Tela de notebook com Webull",
-            url: "https://res.cloudinary.com/dlizakp2a/image/upload/v1613749814/360x360_r_a1_973b2a68c9.jpg",
-          },
+          alternativeText: "Tela de notebook com Webull",
+          url: "https://res.cloudinary.com/dlizakp2a/image/upload/v1613749814/360x360_r_a1_973b2a68c9.jpg",
         },
         {
           __v: 0,
-          image: {
-            alternativeText: "Filme Kodak para câmeras antigas",
-            url: "https://res.cloudinary.com/dlizakp2a/image/upload/v1613749814/360x360_r_1_b3fcbf1d93.jpg",
-          },
+          alternativeText: "Filme Kodak para câmeras antigas",
+          url: "https://res.cloudinary.com/dlizakp2a/image/upload/v1613749814/360x360_r_1_b3fcbf1d93.jpg",
         },
       ],
       metadata: {
@@ -218,6 +221,7 @@ describe("map-sections", () => {
         section_id: "gallery",
       },
     });
+
     expect(data.background).toBe(false);
     expect(data.component).toBe("section.section-grid-image");
     expect(data.sectionId).toBe("gallery");
