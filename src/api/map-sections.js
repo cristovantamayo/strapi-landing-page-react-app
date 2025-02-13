@@ -28,8 +28,14 @@ export const mapSectionTwoColumns = (section = []) => {
     image: { url: srcImg = "" } = "",
   } = section;
 
-  const { background = false, section_id: sectionId = "" } =
-    section.metadata[0];
+  const metadata =
+    section.length === undefined
+      ? section.metadata.length !== undefined
+        ? section.metadata[0]
+        : section.metadata
+      : [];
+
+  const { background = false, section_id: sectionId = "" } = metadata;
 
   return {
     component,

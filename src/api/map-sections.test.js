@@ -70,10 +70,12 @@ describe("map-sections", () => {
       __component: "section.section-two-columns",
       title: "January brings us Firefox 85",
       description: "abc",
-      metadata: {
-        background: true,
-        section_id: "contact",
-      },
+      metadata: [
+        {
+          background: true,
+          section_id: "contact",
+        },
+      ],
       __v: 1,
       image: {
         url: "a.svg",
