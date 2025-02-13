@@ -21,14 +21,15 @@ export const mapSections = (sections = []) => {
 };
 
 export const mapSectionTwoColumns = (section = []) => {
-  console.log("section: ", section);
   const {
     __component: component = "",
     title = "",
     description: text = "",
     image: { url: srcImg = "" } = "",
-    metadata: { background = false, section_id: sectionId = "" } = false,
   } = section;
+
+  const { background = false, section_id: sectionId = "" } =
+    section.metadata[0];
 
   return {
     component,

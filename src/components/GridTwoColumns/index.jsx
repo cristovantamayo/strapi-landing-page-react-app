@@ -11,8 +11,6 @@ export const GridTwoColumns = ({
   background = false,
   sectionId = "",
 }) => {
-  console.log("title: ", title);
-  console.log("background: ", background);
   return (
     <SectionBackground background={background} sectionId={sectionId}>
       <Styled.Container background={background}>

@@ -12,6 +12,8 @@ import { mapData } from "../../api/map-data";
 import { PageNotFound } from "../PageNotFound";
 import { Loading } from "../Loading";
 
+import config from "../../config";
+
 function Home() {
   const [data, setData] = useState([]);
   const isMounted = useRef(true);
@@ -19,11 +21,11 @@ function Home() {
 
   useEffect(() => {
     const pathname = location.pathname.replace(/[^a-z0-9-_]/gi, "");
-    const slug = pathname ? pathname : "landing-page";
+    const slug = pathname ? pathname : config.defaultSlug;
     const load = async () => {
       try {
         const data = await fetch(
-          `http://localhost:1337/api/pages?filters[slug][$eq]=${slug}&populate[sections][populate]=*&populate[menu][populate]=*`,
+          `${config.url}${slug}&populate[sections][populate]=*&populate[menu][populate]=*`,
         );
         const json = await data.json();
         const pageData = mapData(json.data);
@@ -42,6 +44,20 @@ function Home() {
       isMounted.current = false;
     };
   }, [location]);
+
+  useEffect(() => {
+    if (data === undefined) {
+      document.tittle = `Page not found | ${config.siteName}`;
+    }
+
+    if (data && !data.slug) {
+      document.title = `Loading... | ${config.siteName}`;
+    }
+
+    if (data && data.title) {
+      document.title = `${data.title} | ${config.siteName}`;
+    }
+  }, [data]);
 
   if (data === undefined) {
     return <PageNotFound />;
