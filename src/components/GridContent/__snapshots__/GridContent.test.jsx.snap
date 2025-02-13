@@ -51,6 +51,7 @@ exports[`<GridContent /> should render grid content component 1`] = `
 <div>
   <div
     class="c0"
+    id=""
   >
     <div
       class="c1"
@@ -225,6 +226,7 @@ exports[`<GridContent /> should render grid content component with background 1`
 <div>
   <div
     class="c0"
+    id=""
   >
     <div
       class="c1"
@@ -397,6 +399,7 @@ exports[`<GridContent /> should render grid content component without background
 <div>
   <div
     class="c0"
+    id=""
   >
     <div
       class="c1"

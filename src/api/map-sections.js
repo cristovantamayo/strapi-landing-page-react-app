@@ -8,7 +8,6 @@ export const mapSections = (sections = []) => {
     }
     if (section.__component === "section.section-grid") {
       const { text_grid = [], image_grid = [] } = section;
-
       if (text_grid.length > 0) {
         return mapTextGrid(section);
       }
@@ -27,8 +26,17 @@ export const mapSectionTwoColumns = (section = []) => {
     title = "",
     description: text = "",
     image: { url: srcImg = "" } = "",
-    metadata: [{ background = false, section_id: sectionId = "" }] = false,
   } = section;
+
+  const metadata =
+    section.length === undefined
+      ? section.metadata.length !== undefined
+        ? section.metadata[0]
+        : section.metadata
+      : [];
+
+  const { background = false, section_id: sectionId = "" } = metadata;
+
   return {
     component,
     title,
@@ -39,7 +47,7 @@ export const mapSectionTwoColumns = (section = []) => {
   };
 };
 
-export const mapTextGrid = (section = {}) => {
+export const mapTextGrid = (section = []) => {
   const {
     __component: component = "",
     title = "",
@@ -98,11 +106,11 @@ const builderContext = (html) => {
     .join("");
 };
 
-export const mapSectionContent = (section = {}) => {
+export const mapSectionContent = (section = []) => {
   const {
     __component: component = "",
     title = "",
-    content = "",
+    content = [],
     srcImg,
     metadata: { background = false, section_id: sectionId = "" } = false,
   } = section;

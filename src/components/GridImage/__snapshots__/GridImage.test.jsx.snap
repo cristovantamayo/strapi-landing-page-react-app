@@ -77,6 +77,7 @@ exports[`<GridImage /> should render GridText with background 1`] = `
 <div>
   <div
     class="c0"
+    id=""
   >
     <div
       class="c1"
@@ -253,6 +254,7 @@ exports[`<GridImage /> should render GridText without background 1`] = `
 <div>
   <div
     class="c0"
+    id=""
   >
     <div
       class="c1"
