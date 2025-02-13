@@ -21,6 +21,7 @@ export const mapSections = (sections = []) => {
 };
 
 export const mapSectionTwoColumns = (section = []) => {
+  console.log("section: ", section);
   const {
     __component: component = "",
     title = "",
